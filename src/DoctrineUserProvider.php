@@ -28,6 +28,7 @@ class DoctrineUserProvider implements UserProviderInterface
      */
     public function __construct(Hasher $hasher, EntityManager $entityManager, $entity)
     {
+        die('testing this works');
         $this->hasher = $hasher;
         $this->entityManager = $entityManager;
         $this->entity = $entity;
